@@ -4,7 +4,6 @@ import { FiArrowRight } from 'react-icons/fi';
 
 import HeaderContainer from '../../components/HeaderContainer';
 
-import rocketseatImg from '../../assets/rock.svg';
 import logoImg from '../../assets/logo.svg';
 
 import gitImg from '../../assets/git.svg';
