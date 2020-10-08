@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
 `;
 
 export const Header = styled.header`
@@ -107,7 +107,7 @@ export const SectionThree = styled.main`
     align-items: center;
 
     padding-bottom: 40px;
-  
+
     color: #212353;
   }
 
@@ -129,7 +129,7 @@ export const Weather = styled.div`
   align-items: center;
   align-content: center;
 
-  maring: 0 auto;
+  margin: 0 auto;
 
   padding: 71px 0px 51px 0px;
   flex-wrap: wrap;
@@ -140,8 +140,8 @@ export const Box = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  maring: 0 auto;
-  
+  margin: 0 auto;
+
   width: 482.29px;
   height: 388px;
   left: 288px;
@@ -166,7 +166,7 @@ export const Box = styled.div`
     font-size: 16px;
     line-height: 160%;
 
-    color: #4B5D68;
+    color: #4b5d68;
 
     padding: 0px 50px 0px 211px;
   }
@@ -181,7 +181,7 @@ export const Rectangle = styled.div`
 
   margin-bottom: 80px;
 
-  background: #B0C6A1;
+  background: #b0c6a1;
   opacity: 0.2;
 `;
 
@@ -200,127 +200,127 @@ export const SectionFour = styled.main`
       font-weight: bold;
       font-size: 40px;
       line-height: 130%;
-    
+
       color: #212353;
     }
-  
+
     p {
       font-family: Avenir;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       line-height: 160%;
-  
+
       color: #4b5d68;
     }
   }
 `;
 
 export const ButtonBox = styled.div`
-  a:link, a:visited {
+  a:link,
+  a:visited {
     text-decoration: none;
   }
 `;
 
 export const Button = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
-width: 276px;
-height: 60px;
-left: 1084px;
-top: 50px;
+  width: 276px;
+  height: 60px;
+  left: 1084px;
+  top: 50px;
 
-background: #ffffff;
-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
 
-/* font-family: Avenir; */
-font-style: normal;
-font-weight: 900;
-font-size: 16px;
-line-height: 160%;
+  /* font-family: Avenir; */
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 160%;
 
-letter-spacing: 0.005em;
+  letter-spacing: 0.005em;
 
-color: #212353;
+  color: #212353;
 
-svg {
-  width: 30px;
-  height: 24px;
-  color: #b0c6a1;
-}
+  svg {
+    width: 30px;
+    height: 24px;
+    color: #b0c6a1;
+  }
 `;
 
 export const Footer = styled.div`
-max-width: 1280px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-padding: 60px 40px 20px 40px;
+  padding: 60px 40px 20px 40px;
 
-a:link, a:visited {
-  text-decoration: none;
-}
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
 
-> strong {
-  margin-right: auto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+  > strong {
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
 
-  padding-left: 30px;
+    padding-left: 30px;
 
-  letter-spacing: 0.694286px;
+    letter-spacing: 0.694286px;
 
-  color: #212353;
-}
+    color: #212353;
+  }
 
-p {
-  font-family: Avenir;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 180%;
-/* or 22px */
+  p {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    /* or 22px */
 
-display: flex;
-align-items: center;
-letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
 
-/* 2 */
+    /* 2 */
 
-color: #212353;
-}
+    color: #212353;
+  }
 `;
 
 export const Information = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  p {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    /* or 29px */
 
+    letter-spacing: 0.01em;
 
-p {
-  font-family: Avenir;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 180%;
-/* or 29px */
+    /* 2 */
 
-letter-spacing: 0.01em;
+    color: #212353;
 
-/* 2 */
-
-color: #212353;
-
-margin-top: 5px;
-}
+    margin-top: 5px;
+  }
 `;
 
 export const SocialMedia = styled.div`

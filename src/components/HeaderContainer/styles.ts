@@ -9,7 +9,8 @@ export const HeaderContent = styled.div`
 
   padding: 0px 40px 0px 40px;
 
-  a:link, a:visited {
+  a:link,
+  a:visited {
     text-decoration: none;
   }
 

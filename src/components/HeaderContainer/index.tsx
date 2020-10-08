@@ -12,7 +12,7 @@ const HeaderContainer: React.FC = () => {
       <img src={logoImg} alt="SolouChuva" />
       <strong>Sol ou Chuva</strong>
 
-      <a href={'https://app.solouchuva.com.br'}>
+      <a href="https://app.solouchuva.com.br">
         <Profile>
           <strong>Testar demostração</strong>
           <FiArrowRight />
