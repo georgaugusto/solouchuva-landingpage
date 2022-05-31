@@ -1,12 +1,14 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import LandingPage from '../pages/LandingPage';
 
-const Routes: React.FC = () => (
-  <Switch>
-    <Route path="/" component={LandingPage} />
-  </Switch>
-);
+function Router() {
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+    </Routes>
+  );
+}
 
-export default Routes;
+export default Router;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FiArrowRight } from 'react-icons/fi';
 
-import HeaderContainer from '../../components/HeaderContainer';
+import Header from '../../components/Header';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -23,7 +23,6 @@ import pluviometerindexImg from '../../assets/pluviometerindex.svg';
 
 import {
   Container,
-  Header,
   Content,
   SectionOne,
   SectionTwo,
@@ -39,12 +38,10 @@ import {
   SocialMedia,
 } from './styles';
 
-const LandingPage: React.FC = () => {
+function LandingPage() {
   return (
     <Container>
-      <Header>
-        <HeaderContainer />
-      </Header>
+      <Header />
 
       <Content>
         <SectionOne>
@@ -81,102 +78,111 @@ const LandingPage: React.FC = () => {
             utilizam nossa estação meteorológica.
           </p>
           <Weather>
-            <Box
-              style={{
-                backgroundImage: `url(${temperatureImg})`,
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1>Temperatura</h1>
-              <p>
-                Indicam as temperaturas máxima e mínima do ar em graus Celsius
-                (°C), ocorridas no dia em tempo real.
-              </p>
-            </Box>
-            <Box
-              style={{
-                backgroundImage: `url(${moistureImg})`,
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1>Umidade do Ar e Solo</h1>
-              <p>
-                Registra a umidade do ar e do solo, em valores relativos,
-                expressos em porcentagem (%), ocorridas no dia em tempo real.
-              </p>
-            </Box>
-            <Box
-              style={{
-                backgroundImage: `url(${luminosityImg})`,
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1>Luminosidade</h1>
-              <p>
-                Detecta a incidência de luz, em quantidade de luz (lux),
-                ocorridas no dia em tempo real.
-              </p>
-            </Box>
-            <Box
-              style={{
-                backgroundImage: `url(${atmosphericpressureImg})`,
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1>Pressão Atmosférica</h1>
-              <p>
-                Mede a pressão atmosférica em coluna de milímetros de mercúrio
-                (mm Hg) e em hectopascal (hPa), ocorridas no dia em tempo real.
-              </p>
-            </Box>
-            <Box
-              style={{
-                backgroundImage: `url(${uvindexImg})`,
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1>Índice Ultravioleta</h1>
-              <p>
-                Medem diretamente a quantidade de radiação ultravioleta que está
-                alcançando a superfície da Terra, ocorridas no dia em tempo
-                real.
-              </p>
-            </Box>
-            <Box
-              style={{
-                backgroundImage: `url(${altitudeImg})`,
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1>Altitude</h1>
-              <p>
-                Mede a altitude em metros (m), ocorridas no dia em tempo real.
-              </p>
-            </Box>
-            <Box
-              style={{
-                backgroundImage: `url(${windspeedImg})`,
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1>Velocidade do Vento</h1>
-              <p>
-                Registra continuamente a velocidade instantânea do vento (em
-                m/s), ocorridas no dia em tempo real.
-              </p>
-            </Box>
-            <Box
-              style={{
-                backgroundImage: `url(${pluviometerindexImg})`,
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <h1>Índice Pluviométrico</h1>
-              <p>
-                Registra a quantidade de precipitação pluvial (chuva), em
-                milímetros (mm), ocorridas no dia em tempo real.
-              </p>
-            </Box>
+            <div>
+              <Box
+                style={{
+                  backgroundImage: `url(${temperatureImg})`,
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <h1>Temperatura</h1>
+                <p>
+                  Indicam as temperaturas máxima e mínima do ar em graus Celsius
+                  (°C), ocorridas no dia em tempo real.
+                </p>
+              </Box>
+              <Box
+                style={{
+                  backgroundImage: `url(${moistureImg})`,
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <h1>Umidade do Ar e Solo</h1>
+                <p>
+                  Registra a umidade do ar e do solo, em valores relativos,
+                  expressos em porcentagem (%), ocorridas no dia em tempo real.
+                </p>
+              </Box>
+            </div>
+            <div>
+              <Box
+                style={{
+                  backgroundImage: `url(${luminosityImg})`,
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <h1>Luminosidade</h1>
+                <p>
+                  Detecta a incidência de luz, em quantidade de luz (lux),
+                  ocorridas no dia em tempo real.
+                </p>
+              </Box>
+              <Box
+                style={{
+                  backgroundImage: `url(${atmosphericpressureImg})`,
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <h1>Pressão Atmosférica</h1>
+                <p>
+                  Mede a pressão atmosférica em coluna de milímetros de mercúrio
+                  (mm Hg) e em hectopascal (hPa), ocorridas no dia em tempo
+                  real.
+                </p>
+              </Box>
+            </div>
+            <div>
+              <Box
+                style={{
+                  backgroundImage: `url(${uvindexImg})`,
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <h1>Índice Ultravioleta</h1>
+                <p>
+                  Medem diretamente a quantidade de radiação ultravioleta que
+                  está alcançando a superfície da Terra, ocorridas no dia em
+                  tempo real.
+                </p>
+              </Box>
+              <Box
+                style={{
+                  backgroundImage: `url(${altitudeImg})`,
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <h1>Altitude</h1>
+                <p>
+                  Mede a altitude em metros (m), ocorridas no dia em tempo real.
+                </p>
+              </Box>
+            </div>
+            <div>
+              <Box
+                style={{
+                  backgroundImage: `url(${windspeedImg})`,
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <h1>Velocidade do Vento</h1>
+                <p>
+                  Registra continuamente a velocidade instantânea do vento (em
+                  m/s), ocorridas no dia em tempo real.
+                </p>
+              </Box>
+              <Box
+                style={{
+                  backgroundImage: `url(${pluviometerindexImg})`,
+                  backgroundRepeat: 'no-repeat',
+                }}
+              >
+                <h1>Índice Pluviométrico</h1>
+                <p>
+                  Registra a quantidade de precipitação pluvial (chuva), em
+                  milímetros (mm), ocorridas no dia em tempo real.
+                </p>
+              </Box>
+            </div>
           </Weather>
         </SectionThree>
       </Content>
@@ -227,6 +233,6 @@ const LandingPage: React.FC = () => {
       </Footer>
     </Container>
   );
-};
+}
 
 export default LandingPage;
